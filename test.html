@@ -5,6 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="test.js" defer></script>
+    <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #img {
+      margin-top: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    #img:hover {
+      transform: scale(1.05);
+    }
+
+    .guess-game {
+      background-color: white;
+      margin: 40px auto;
+      padding: 30px;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input.guessField {
+      padding: 8px;
+      width: 60%;
+      font-size: 16px;
+      margin-top: 10px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .result, .count, .guesses {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .restartBtn {
+      background-color: #f44336;
+    }
+
+    .restartBtn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
 </head>
 <body>
     <button id="btn1" >點我1</button>
@@ -22,6 +93,8 @@
     <button class="guessSubmit">提交</button>
     <div class="result"></div>
     <div class="count"></div>
+    <p class="guesses">猜過的數字:</p>
+    <button class="restartBtn">重新開始</button>
   </div>
 </body>
-</html>
+</html> 
